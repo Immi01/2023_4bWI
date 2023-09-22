@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+}
+
+.pinkBox {
+    background-color: pink;
+    position:absolute;
+    height: 50px;
+    width: 50px;
+    top:0px;
+    right:0px;
+}
+
+.blueBox {
+    position: relative;
+    background-color: aqua;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.orangeBox {
+    background-color: orange;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+}
+
+.yellowBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: yellow;
+    margin-top: 50px;
+    height: 200px;
+    width: 100%;
+}
+
+.greenBox{
+    display: flex;
+    background-color: green;
+    height:75px;
+    width:75px;
+}
+
