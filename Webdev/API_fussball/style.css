@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    font-family: Montserrat;
+    color: #3F4950;
+    font-style: normal;
+    line-height: normal;
+}
+
+body {
+    background-color: #F7F5EE;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 0px;
+    font-weight: 600;
+    width: 23rem;
+}
+
+.masthead {
+    width: 100vw;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #3F4950;
+    height: 87px;
+}
+
+.Header {
+    position: relative;
+    left: 20px;
+    top: 22px;
+    width: 25rem;
+}
+
+.material-icons {
+    font-size: 2.5rem;
+}
+
+.Title {
+    display: inline;
+    vertical-align: bottom;
+}
+
+.MastheadMenuPoints {
+    position: absolute;
+    right: 30px;
+    top: 36px;
+}
+
+#Impressum {
+    width: 6rem;
+}
+#Impressum:hover {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.clubsHeader {
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.clubContainer {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 65px;
+    column-gap: 21px;
+    row-gap: 24px;
+    flex-wrap: wrap;
+}
+
+.club {
+    position: relative;
+    border: 1px solid #3F4950;
+    border-radius: 10px;
+    width: 20rem;
+    height: 6.25rem;
+    flex-shrink: 0;
+}
+
+.clubImg {
+    width: 5rem;
+    height: auto;
+    margin: 10px;
+}
+
+.clubTxtCont {
+    display: inline;
+    position: absolute;
+    top: 14px;
+}
+
+.clubName {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: 6px;
+}
+
+.clubPointsCont {
+    margin-top: 1px;
+}
+
+.clubPoints {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.clubPointsTxt {
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.topScorersHeader {
+    margin-top: 37px;
+}
+
+
