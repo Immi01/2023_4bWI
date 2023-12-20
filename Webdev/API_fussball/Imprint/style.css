@@ -44,6 +44,17 @@ h1 {
     vertical-align: bottom;
 }
 
+.Table {
+    font-size: 2rem;
+    font-weight: 500; 
+    position: absolute;
+    left: 475px;
+    top: 26px;
+}
+.Table:hover {
+    cursor: pointer;
+}
+
 .MastheadMenuPoints {
     position: absolute;
     right: 30px;
@@ -52,4 +63,21 @@ h1 {
 
 #Impressum {
     width: 6rem;
+}
+#Impressum:hover {
+    cursor: default;
+}
+
+.imprintHeader {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.imprintInfo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-left: 50px;
 }

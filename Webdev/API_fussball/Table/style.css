@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    font-family: Montserrat;
+    color: #3F4950;
+    font-style: normal;
+    line-height: normal;
+}
+
+body {
+    background-color: #F7F5EE;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 0px;
+    font-weight: 600;
+    width: 23rem;
+}
+
+.masthead {
+    width: 100vw;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #3F4950;
+    height: 87px;
+}
+
+.Header {
+    position: relative;
+    left: 20px;
+    top: 22px;
+    width: 25rem;
+}
+.Header:hover {
+    cursor: pointer;
+}
+
+.material-icons {
+    font-size: 2.5rem;
+}
+
+.Title {
+    display: inline;
+    vertical-align: bottom;
+}
+
+.Table {
+    font-size: 2rem;
+    font-weight: 500; 
+    position: absolute;
+    left: 475px;
+    top: 26px;
+}
+.Table:hover {
+    cursor: default;
+}
+
+.MastheadMenuPoints {
+    position: absolute;
+    right: 30px;
+    top: 36px;
+}
+
+#Impressum {
+    width: 6rem;
+}
+#Impressum:hover {
+    cursor: pointer;
+}
+
+.TableHeader {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.TableContainer {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.ClubContainer {
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    height: 100px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: 100px 17% 0px auto 0px auto;
+}
+
+.Banner {
+    width: 80px;
+    height: auto;
+    margin: 10px;
+}
+
+.txt {
+    font-size: 1.5rem;
+    font-weight: 500; 
+    width: 220px;
+}
+
+.notPoints {
+    font-size: 2.375rem;
+    font-weight: 500;
+}
+
+.Points {
+    font-size: 2.8125rem;
+    font-weight: 700;
+}
+
+.PointsTxt {
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.center {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.top {
+    margin-top: 6px;
+    height: 34px;
+}
+
+.kda {
+    font-size: 1.25rem;
+    font-weight: 500;
+    height: 37px;
+    margin-top: 10px;
+}
+
+.PointsContainer {
+    width: 220px;
+}
+
+.MatchesContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 40px;
+}
+
+.seperator {
+    border: 1px solid #A5A49F;
+    border-radius: 1px;
+    height: 82px;
+    margin-top: 6px;
+}

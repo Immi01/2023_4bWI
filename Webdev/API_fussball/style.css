@@ -31,6 +31,9 @@ h1 {
     top: 22px;
     width: 25rem;
 }
+.Header:hover {
+    cursor: default;
+}
 
 .material-icons {
     font-size: 2.5rem;
@@ -39,6 +42,17 @@ h1 {
 .Title {
     display: inline;
     vertical-align: bottom;
+}
+
+.Table {
+    font-size: 2rem;
+    font-weight: 500; 
+    position: absolute;
+    left: 475px;
+    top: 26px;
+}
+.Table:hover {
+    cursor: pointer;
 }
 
 .MastheadMenuPoints {
@@ -78,7 +92,7 @@ h2 {
     border: 1px solid #3F4950;
     border-radius: 10px;
     width: 20rem;
-    height: 6.25rem;
+    min-height: 6.25rem;
     flex-shrink: 0;
 }
 
@@ -86,12 +100,14 @@ h2 {
     width: 5rem;
     height: auto;
     margin: 10px;
+    margin-right: 0px;
 }
 
 .clubTxtCont {
-    display: inline;
-    position: absolute;
-    top: 14px;
+    margin-top: 14px;
+    float: right;
+    margin-right: 5px;
+    width: 13.5rem;
 }
 
 .clubName {
@@ -118,4 +134,57 @@ h2 {
     margin-top: 37px;
 }
 
+.topScorer {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
+.topScorerScoreContainer {
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.topScorerPlacement {
+    font-size: 2.8125rem;
+    font-weight: 700;
+}
+
+.topScorerScore {
+    font-size: 2.8125rem;
+    font-weight: 700;
+}
+
+.topScorerGoals {
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.nextGame {
+    display: flex;
+    height: 135px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nextGameClub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nextGameText {
+    margin-top: 4px;
+    font-size: 1.25rem;
+    font-weight: 500; 
+}
+
+.nextGameVs {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
