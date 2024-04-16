@@ -3,6 +3,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './App.css';
+import Home from "./components/pages/Home";
+import Table from "./components/pages/Table";
+import Imprint from "./components/pages/Imprint";
 
 function App() {
   const router = createBrowserRouter([
@@ -11,9 +14,13 @@ function App() {
       element: <Home/>,
     },
     {
-      path: "/friends",
+      path: "/table",
       element: <Table/>,
     },
+    {
+      path: "/imprint",
+      element: <Imprint/>,
+    }
   ]);
 
   return (
