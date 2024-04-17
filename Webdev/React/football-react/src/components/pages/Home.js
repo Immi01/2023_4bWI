@@ -1,16 +1,15 @@
 import React from 'react'
-import Button from '../atoms/Button'
-import { Link } from 'react-router-dom';
 import './Home.css'
 import Masthead from '../molecules/Masthead';
+import SectionHeader from '../atoms/SectionHeader';
 
 export default function Home() {
   return (
     <div>
       <Masthead/>
-      Home
-      <Button fn={()=>{alert("yes");}} id="alert"/>
-      <Link to="table">Table</Link>
+      <SectionHeader title={"Vereine"}/>
+      <SectionHeader title={"Top Torschützen"}/>
+      <SectionHeader title={"Nächste Spiele"}/>
     </div>
   )
 }

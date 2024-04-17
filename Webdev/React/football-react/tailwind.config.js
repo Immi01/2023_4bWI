@@ -14,7 +14,7 @@ module.exports = {
     },
     spacing: {
       '90': '23rem',
-      '25rem': '25.5rem'
+      '25rem': '25rem'
     }
   },
   plugins: [],
