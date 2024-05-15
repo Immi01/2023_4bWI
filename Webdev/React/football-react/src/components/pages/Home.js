@@ -17,14 +17,12 @@ export default function Home() {
   useEffect(() =>{
     fetch("https://api.openligadb.de/getbltable/bl1/2022").then((result)=>{
         result.json().then((data)=>{
-            console.log(data);
             data.splice(10);
             setclubs(data);
           });
     });
     fetch("https://api.openligadb.de/getgoalgetters/bl1/2022").then((result)=>{
         result.json().then((data)=>{
-            console.log(data);
             data.splice(5);
             setTopScorers(data);
         });
@@ -37,7 +35,8 @@ export default function Home() {
       Clubimg1:"https://i.imgur.com/jJEsJrj.png",
       Clubimg2:"https://i.imgur.com/Rpwsjz1.png"
     }, 0, 5);
-    setNextGames(Games);
+    
+    //setNextGames(Games);
 
     /*fetch("https://api.openligadb.de/getmatchdata/bl1/2022").then((result)=>{
         result.json().then((data)=>{
@@ -50,7 +49,7 @@ export default function Home() {
   return (
     <div>
       <Masthead/>
-      <SectionHeader title={"Vereine"} mt={25}/>
+      <SectionHeader title={"Vereine"} mt={"25px"}/>
       <Container content={clubs.map((data)=>{
         let points = ""
         if (data.points < 10) {
@@ -60,12 +59,12 @@ export default function Home() {
         }
         return(<Club img={data.teamIconUrl} Club={data.teamName} points={points}/>)
       })}/>
-      <SectionHeader title={"Top Torschützen"}/>
+      <SectionHeader title={"Top Torschützen"} mt={"37px"}/>
       <Container content={topScorers.map((data)=>{
         counter++;
         return(<TopScorer Scorer={data.goalGetterName} score={data.goalCount} placment={counter}/>)
       })}/>
-      <SectionHeader title={"Nächste Spiele"}/>
+      <SectionHeader title={"Nächste Spiele"} mt={"37px"}/>
       <Container content={nextGames.map((data)=>{
         return(<NextGames Club1={data.Club1} Club2={data.Club2} Clubimg1={data.Clubimg1} Clubimg2={data.Clubimg2}/>)
       })}/>
