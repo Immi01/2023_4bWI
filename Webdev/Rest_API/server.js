@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const db = require("./db");
 
 const app = express();
 app.use(bodyParser.urlencoded({extended:false}));
@@ -18,8 +19,13 @@ app.get('/', (req, res) => {
     res.send('Hello World');
 });
 
-app.get('/people', (req, res) => {
-    res.send(data);
+app.get('/people', async (req, res) => {
+    try {
+        let result = await db.query("select * from people");
+        res.send(result);
+    } catch (error) {
+        res.status(404).send(error.message)
+    }
 });
 
 app.get('/people/:id', (req, res) => {
@@ -35,14 +41,19 @@ app.delete('/people/:id', (req, res) => {
 });
 
 
-app.post('/post', (req, res) => {
-    data.push(req.body);
-
-    res.send(req.body);
-})
+app.post('/post', async (req, res) => {
+    let person = req.body;
+    let sql = "insert into people (firstname, lastname) values(?,?)"
+    try {
+        let result = await db.query(sql, [person.firstname, person.lastname]);
+        res.send(result);
+    } catch (error) {
+        res.status(404).send(error.message)
+    }
+});
 
 
 app.listen(port, () => {
     console.log(`Server running on port  ${port}!`)
-})
+});
 
