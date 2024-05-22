@@ -28,16 +28,27 @@ app.get('/people', async (req, res) => {
     }
 });
 
-app.get('/people/:id', (req, res) => {
+app.get('/people/:id', async (req, res) => {
     let id = req.params.id;
-    res.send(data[id]);
+    let sql = "SELECT * FROM people WHERE id=?";
+    try {
+        let result = await db.query(sql, [id]);
+        res.send(result);
+    } catch (error) {
+        res.status(404).send(error.message)
+    }
 });
 
 
-app.delete('/people/:id', (req, res) => {
+app.delete('/people/:id', async (req, res) => {
     let id = req.params.id;
-    data.splice(id,1);
-    res.send("done");
+    let sql = "DELETE FROM people WHERE id=?";
+    try {
+        let result = await db.query(sql, [id]);
+        res.send(result);
+    } catch (error) {
+        res.status(404).send(error.message)
+    }
 });
 
 
